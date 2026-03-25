@@ -190,7 +190,7 @@ ctk.set_default_color_theme("blue")
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("Conversor CDHU Precision - Estabilidade Total")
+        self.title("Conversor CDHU")
         self.geometry("520x360")
         self.resizable(False, False)
         self._arquivo_pdf = ""
@@ -198,7 +198,7 @@ class App(ctk.CTk):
 
     def _build_ui(self):
         self.grid_columnconfigure(0, weight=1)
-        ctk.CTkLabel(self, text="CONVERSOR CDHU PRECISION",
+        ctk.CTkLabel(self, text="CONVERSOR PDF-EXCEL CDHU",
                      font=("Roboto", 20, "bold")).grid(row=0, column=0, pady=(28, 10))
         self._btn_sel = ctk.CTkButton(self, text="Selecionar PDF",
                                       width=200, command=self._selecionar)
